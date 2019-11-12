@@ -1,0 +1,59 @@
+h1 {
+    color:  #000;
+    font-family: Arial,Helvetica, Geneva,
+    SunSans-Regular, sans-serif    
+}
+h5 {
+    color: #ffffff;
+    font-family: Arial,Helvetica, Geneva,
+    SunSans-Regular, sans-serif 
+}
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman",
+    Times, serif;
+    color: white;
+    background-color: #b40000
+}
+a {
+ color: #000;
+ -webkit-transition: color 1s ease-in; /*safari and chrome */
+ -moz-transition: color 1s ease-in; /* firefox */
+ -o-transition: color 1s ease-in; /* opera */
+}
+
+/*------------------------Titulo-----------------------*/
+.Banner{
+    background: #ffffff;
+    border-bottom: 2px solid black;
+    position:  relative;
+    z-index: -1000;
+}
+.Banner-texto{
+    position: absolute;
+    top: 15%;
+    left: -29%;
+    
+    width: 100%;
+    color:  #000;
+}
+
+
+/*------------------------Menu--------------------------*/
+.menu{
+    list-style: none;   
+}
+.menu-link{
+    border-bottom: 2px solid darkred;
+    width: 200px;
+    display: block;
+    padding: 1px;
+    text-decoration: buttontext;
+}
+.menu-link:hover{
+    background: whitesmoke;
+    transition: all 0.3s;
+    color: blue;
+}
+
+
