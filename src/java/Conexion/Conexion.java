@@ -15,14 +15,15 @@ import java.util.*;
 
 public class Conexion 
 {
-   private String use = "root";
-    private String pss = "root";
-    private String db = "amp";
-    private String host = "localhost";
-    private String puerto = "3308";
+    private String use = "sql9311878";
+    private String pss = "puuMgUaeGs";
+    private String db = "sql9311878";
+    private String host = "sql9.freemysqlhosting.net";
+    private String puerto = "3306";
     private String CLASSNAME = "com.mysql.jdbc.Driver";
     private String dir = "jdbc:mysql://" +host+":"+puerto+"/"+db;
     private Connection con;
+
     
     public Conexion() 
     {

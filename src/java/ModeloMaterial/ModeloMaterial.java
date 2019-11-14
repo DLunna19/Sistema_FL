@@ -22,7 +22,7 @@ public class ModeloMaterial extends Conexion
         boolean bandera = false;
         
         try {
-            String query = "Insert into Material (ClaveMaterial, NombreMaterial, UnidadControl, "
+            String query = "Insert into material (ClaveMaterial, NombreMaterial, UnidadControl, "
                     + "PrecioLista, PesoTeorico) values (?,?,?,?,?)";
             pt = getConexion().prepareStatement(query);
             pt.setString(1, m.getClave());
@@ -53,7 +53,7 @@ public class ModeloMaterial extends Conexion
         PreparedStatement pst = null;
         ResultSet rs = null;
          try {
-            String consulta = "select * from Material";
+            String consulta = "select * from material";
             pst = getConexion().prepareStatement(consulta);
             rs = (ResultSet) pst.executeQuery();
             
@@ -79,7 +79,7 @@ public class ModeloMaterial extends Conexion
         PreparedStatement pst = null;
         ResultSet rs = null;
          try {
-            String consulta = "select * from Material where ClaveMaterial=?";
+            String consulta = "select * from material where ClaveMaterial=?";
             pst = getConexion().prepareStatement(consulta);
             pst.setString(1, ClaveMaterial);
             rs = (ResultSet) pst.executeQuery();
@@ -106,7 +106,7 @@ public class ModeloMaterial extends Conexion
         boolean bandera = false;
         PreparedStatement pst = null;
          try {
-            String consulta = "delete from Material where NombreMaterial=?";
+            String consulta = "delete from material where NombreMaterial=?";
             pst = getConexion().prepareStatement(consulta);
             pst.setString(1, nombreMaterial);
             if(pst.executeUpdate() == 1)
@@ -129,7 +129,7 @@ public class ModeloMaterial extends Conexion
         boolean bandera = false;
         
         try {
-            String query = "UPDATE Material SET NombreMaterial= ?, UnidadControl= ?, PrecioLista= ?, PesoTeorico= ? where ClaveMaterial = ?";
+            String query = "UPDATE material SET NombreMaterial= ?, UnidadControl= ?, PrecioLista= ?, PesoTeorico= ? where ClaveMaterial = ?";
             pt = getConexion().prepareStatement(query);
             pt.setString(1, m.getNombre());
             pt.setString(2, m.getUnidadControl());
@@ -162,7 +162,7 @@ public class ModeloMaterial extends Conexion
         PreparedStatement pst = null;
         ResultSet rs = null;
          try { 
-            String consulta = "select * from Material where NombreMaterial like "+Nombre;
+            String consulta = "select * from material where NombreMaterial like "+Nombre;
             pst = getConexion().prepareStatement(consulta);
             //pst.setString(1, Nombre);
             //System.out.println("Hasta aqui");
